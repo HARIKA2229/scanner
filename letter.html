@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>For You ❤️</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            padding: 30px 15px;
+
+            background: #f1e4d3;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-family: Georgia, "Times New Roman", serif;
+            color: #44352c;
+        }
+
+.letter {
+    width: 95%;
+    max-width: 1000px;
+    min-height: 600px;
+
+    padding: 35px 55px;
+
+    background-color: rgba(255, 250, 241, 0.35);
+
+    background-image:
+        linear-gradient(
+            rgba(255, 250, 241, 0.35),
+            rgba(255, 250, 241, 0.35)
+        ),
+        url("third.png");
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    border-radius: 12px;
+
+    box-shadow: 0 15px 45px rgba(60, 40, 25, 0.18);
+
+    border: 1px solid #e1d0bd;
+}
+
+        .secret-file {
+            text-align: center;
+
+            font-family: Arial, sans-serif;
+
+            font-size: 11px;
+
+            letter-spacing: 2px;
+
+            color: #a18c78;
+
+            margin-bottom: 25px;
+        }
+
+        .heart {
+            text-align: center;
+
+            font-size: 45px;
+
+            margin-bottom: 12px;
+        }
+
+        h1 {
+            text-align: center;
+
+            font-size: 35px;
+
+            font-weight: normal;
+
+            color: #503d31;
+
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            text-align: center;
+
+            font-family: Arial, sans-serif;
+
+            font-size: 13px;
+
+            color: #a18c78;
+
+            letter-spacing: 1px;
+        }
+
+        .divider {
+            width: 70px;
+            height: 1px;
+
+            background: #bba591;
+
+            margin: 30px auto;
+        }
+
+      .letter-content {
+            font-size: 18px;
+
+            line-height: 1.9;
+
+            color: #000000;
+        }
+         .letter-content p {
+            margin-bottom: 6px;
+        }
+
+        .special-date {
+            text-align: center;
+
+            margin: 35px 0;
+
+            font-family: Arial, sans-serif;
+        }
+
+        .special-date .date {
+            font-size: 21px;
+
+            letter-spacing: 3px;
+
+            color: #624b3b;
+
+            margin-bottom: 8px;
+        }
+
+        .special-date .small-text {
+            font-size: 12px;
+
+            letter-spacing: 2px;
+
+            color: #a18c78;
+        }
+         .important {
+            text-align: center;
+
+            font-size: 23px;
+
+            font-style: italic;
+
+            color: #0b0a09;
+
+            margin: 35px 0;
+        }
+
+
+        .signature {
+            text-align: right;
+
+            font-size: 20px;
+
+            line-height: 1.7;
+
+            margin-top: 40px;
+        }
+
+        .footer {
+            text-align: center;
+
+            margin-top: 45px;
+
+            padding-top: 20px;
+
+            border-top: 1px solid #e1d0bd;
+
+            font-family: Arial, sans-serif;
+
+            font-size: 10px;
+
+            letter-spacing: 1.5px;
+
+            color: #aa9682;
+        }
+
+        @media (max-width: 600px) {
+
+            body {
+                padding: 15px;
+            }
+
+            .letter {
+                padding: 35px 22px;
+            }
+
+            h1 {
+                font-size: 29px;
+            }
+
+            .letter-content {
+                font-size: 16px;
+            }
+
+            .important {
+                font-size: 20px;
+            }
+        }
+
+/* Beautiful opening animation */
+
+.letter {
+    opacity: 0;
+    transform: translateY(50px) scale(0.96);
+    animation: openLetter 2s ease-out forwards;
+}
+
+.heart {
+    opacity: 0;
+    transform: scale(0.3);
+    animation: showHeart 1.2s ease-out 1.3s forwards;
+}
+
+h1,
+.subtitle,
+.divider {
+    opacity: 0;
+    animation: showContent 1.2s ease-out 1.6s forwards;
+}
+
+@keyframes openLetter {
+    0% {
+        opacity: 0;
+        transform: translateY(50px) scale(0.96);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes showHeart {
+    0% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+
+    70% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes showContent {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+    </style>
+</head>
+
+<body>
+
+    <div class="letter">
+
+        <div class="secret-file">
+            FILE: SPECIAL_MESSAGE.exe
+        </div>
+
+        <div class="heart">
+            ❤️
+        </div>
+
+        <h1>Okka Chinna Letter</h1>
+
+        <div class="subtitle">
+            A message written only for you
+        </div>
+
+        <div class="divider"></div>
+
+
+        <div class="letter-content">
+
+            <p>
+                Dear Jagadeeshuuuuu ❤️
+            </p>
+
+            <p>
+                Nenu ninnu first time kalisina roju
+                nunchi ippati varaku mana journey lo jarigina prati
+                okka thing naaku oka beautiful memory.
+            </p>
+
+            <p>
+                Nitho gadipina prati moment naaku chala special.
+                Nuvvu nannu oka chinna pilla laga chusukune way,
+                na meeda chupinche kopam, aa kopam venakala unde
+                care anni naaku chala chala istam.
+            </p>
+
+            <p>
+                Nuvvu na meeda chupinche prati chinna care kuda
+                naaku chala special.
+            </p>
+
+            <p>
+                <strong>12 years</strong> ayipoyayi mana journey
+                start ayi.
+            </p>
+
+            <p>
+                Enno memories, enno fights, enno happy moments,
+                enno times miss ayyam... kani anni datukoni
+                ippatiki manam kalisi unnam ante adhi kevala ni valla na valla mana prema valla aa.
+            </p>
+
+
+            <div class="special-date">
+
+                <div class="date">
+                    26 • 07 • 2025
+                </div>
+
+                <div class="small-text">
+                    THE DAY WE FINALLY MET ❤️
+                </div>
+
+            </div>
+
+
+            <p>
+                Naa life lo eppatiki marchipoleni roju
+                <strong>July 26, 2025.</strong> Long distance lo
+                unna manam first time kalisina roju adhi.
+            </p>
+
+            <p>
+                Aa roju manam first picture kuda teeskunam.
+                Aa picture naaku just oka photo kaadhu...
+                mana journey lo oka beautiful memory.
+            </p>
+
+            <p>
+                Aa roju nunchi every month manam kalusthu,
+                inka enno beautiful memories create cheskuntunnam.
+                Aa first meeting ni gurthucheskunte ippatiki
+                naaku chala happiness vastundi.
+            </p>
+
+
+            <p>
+                And inko memory kuda na heart lo chala deep ga undhi...
+                <strong>Feb 21 night.</strong>
+            </p>
+
+            <p>
+                Aa roju jarigindhi nenu asalu expect cheyyaledu.
+                Adhi unwanted situation ani telisina kuda,
+                aa time lo naaku vachina feelings ni words lo
+                cheppalenu.Naku Thelusu Nv Dhinikanna yakkuvu Gana Feel Avavuu ani
+            </p>
+
+            <p>
+                Fear, confusion, pain anni unnayi...
+                kani at the same time naaku oka different feeling
+                kuda vachindhi — <strong>motherhood feeling.</strong>
+            </p>
+
+            <p>
+                Aa time lo nuvvu naaku dooram ga unnavu,
+                kani nannu matram asalu alone ga feel avvanivvaledu.
+                Nannu chala care ga chusukunnav, nenu ela unna ani
+                adigav, naatho matladav, naaku dhairyam cheppav.
+            </p>
+
+            <p>
+                Nuvvu na pakkana physically lekapoyina,
+                nee care matram na pakkane undhi ani feel ayyanu.
+                Aa time lo nuvvu nannu ela chusukunnavo,
+                aa care ni nenu eppatiki marchipolenu.
+            </p>
+
+            <p>
+                Nenu em chesina, emi pani chesina ekkado oka corner
+                lo nee gurinche alochisthunauunta.
+            </p>
+
+            <p>
+                Nuvvu naaku entha important ante,
+                words lo complete ga cheppalenu.
+                Nee kosam nenu emaina cheyyagalanu ani anipisthundi,
+                endukante nuvvu na life lo just oka person kaadhu...
+            </p>
+
+        </div>
+
+
+        <div class="important">
+            "You are my world." 🌎❤️
+        </div>
+
+
+        <div class="letter-content">
+
+            <p>
+                Future gurinchi alochinchinappudu kuda naaku
+                nuvvu thappa inkem kanipinchadhu.Inka Yavaru Odhu.
+                Yela aina intlo vallani oppinchukoni Pelli chesukundham raaaa,
+                nithone life share cheskovali aniundhi raa.
+            </p>
+
+            <p>
+                Nuvvu, nenu, mana pillalu❤️,athaya mavya...
+                andharam Kalisi Undham.
+            </p>
+
+            <p>
+                Life lo em jarigina, situations ela unna,
+                nee Chaya matram eppatiki vadhalanu.🫴🏻🫴🏻.
+            </p>
+
+            <p>
+                Enni years aina sare,
+                <strong>I will still choose you.</strong> ❤️
+            </p>
+
+            <p>
+                Nuvvu naaku entha specialo, nenu ninnu entha
+                love chesthunnano, anni words lo cheppadam kastam.
+                Kani okkate cheppagalanu...
+            </p>
+
+        </div>
+
+
+        <div class="important">
+            You are my Life, Jagadeeshuuuu. ❤️
+        </div>
+
+
+        <div class="letter-content">
+
+            <p>
+                And somewhere deep in my heart,
+                <strong>I already feel like I am your wife.</strong> ❤️
+            </p>
+
+        </div>
+
+
+        <div class="signature">
+
+            Forever yours,<br>
+
+            <strong>Harika Devi❤️</strong>
+
+        </div>
+
+
+        <div class="footer">
+            CONNECTION: ACTIVE ♾️ &nbsp; | &nbsp; STATUS: NEVER EXPIRES
+        </div>
+
+    </div>
+
+</body>
+
+</html>
